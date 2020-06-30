@@ -82,6 +82,7 @@ public class Test : MonoBehaviour
         {
             Destroy(lineRenderer);
             ball.GetComponent<Rigidbody>().AddForce(dir * force, ForceMode.Impulse);
+            // ball.GetComponent<Rigidbody>().useGravity = true;
 
         }
         //    propPad = GameObject.FindGameObjectWithTag("propPad");
