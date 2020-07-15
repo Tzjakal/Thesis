@@ -10,6 +10,7 @@ TagManager:
   - propPad
   - wolf
   - obstacle
+  - IKtarget
   layers:
   - Default
   - TransparentFX
