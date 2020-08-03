@@ -55,19 +55,19 @@ public class Test : MonoBehaviour
            
             if (Input.GetKey(KeyCode.J))
             {
-                Wolf.x -= 0.01f;
+                Wolf.x -= 0.04f;
             }
             if (Input.GetKey(KeyCode.L))
             {
-                Wolf.x += 0.01f;
+                Wolf.x += 0.04f;
             }
             if (Input.GetKey(KeyCode.I))
             {
-                Wolf.z += 0.01f;
+                Wolf.z += 0.04f;
             }
             if (Input.GetKey(KeyCode.K))
             {
-                Wolf.z -= 0.01f;
+                Wolf.z -= 0.04f;
             }
 
             dir = new Vector3(Wolf.x, Wolf.y + 0.2f, Wolf.z) - ball.transform.position;
@@ -100,9 +100,7 @@ public class Test : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        
-        //Debug.Log(collision.collider.name);
-
+        GameObject.Destroy(ball);
     }
 
     

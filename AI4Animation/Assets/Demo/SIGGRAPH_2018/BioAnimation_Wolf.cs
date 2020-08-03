@@ -209,17 +209,20 @@ namespace SIGGRAPH_2018 {
 				{
 					if (hit.transform == block.transform)
 					{
-						turn = 1;
-						//Debug.Log("BLOCK");
-					}
+                        if (block.transform.localScale.y < 0.4 && Vector3.Magnitude(block.transform.position - transform.position) < 3.0f)
+                             style[2] = 1;     
+                        else
+                            turn = 1;
+                        //Debug.Log("BLOCK");
+                    }
 
 				}
 			}
             
 
-			if (distance < 150f)
+			if (distance < 1.0f)
             {
-                style[0] = 1f;
+                style[3] = 1f;
                 turn = 0;
                 move = Vector3.zero;
             }
