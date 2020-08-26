@@ -17,9 +17,9 @@ public class Fabrik_Enable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectWithTag("target"))
+        if (GameObject.FindGameObjectWithTag("HitTarget"))
         {
-            fabrik1[0].solver.target = GameObject.FindGameObjectWithTag("target").transform;
+            fabrik1[0].solver.target = GameObject.FindGameObjectWithTag("HitTarget").transform;
             float distance = Vector3.Magnitude(fabrik1[0].solver.target.position - transform.GetChild(0).GetChild(0).GetChild(0).transform.position);
            
 

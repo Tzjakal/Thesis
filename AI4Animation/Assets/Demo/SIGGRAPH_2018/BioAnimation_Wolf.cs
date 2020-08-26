@@ -205,13 +205,13 @@ namespace SIGGRAPH_2018 {
 			
 			foreach (GameObject block in blocks)
 			{
-				if (Physics.SphereCast(destination, block.GetComponent<MeshRenderer>().bounds.extents.magnitude * 1.2f, ray, out hit, 3))
+				if (Physics.SphereCast(destination, block.GetComponent<MeshRenderer>().bounds.extents.magnitude * 1.2f, ray, out hit, 0.5f))
 				{
 					if (hit.transform == block.transform)
 					{
-                        if (block.transform.localScale.y < 0.4 && Vector3.Magnitude(block.transform.position - transform.position) < 3.0f)
-                             style[2] = 1;     
-                        else
+                        //if (block.transform.localScale.y < 0.4 && Vector3.Magnitude(block.transform.position - transform.position) < 3.0f)
+                        //     style[2] = 1;     
+                        //else
                             turn = 1;
                         //Debug.Log("BLOCK");
                     }
@@ -220,7 +220,7 @@ namespace SIGGRAPH_2018 {
 			}
             
 
-			if (distance < 1.0f)
+			if (distance < 0.5f)
             {
                 style[3] = 1f;
                 turn = 0;

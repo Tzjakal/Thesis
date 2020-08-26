@@ -14,7 +14,7 @@ public class Test : MonoBehaviour
     //public GameObject propPad;
  
 
-    private GameObject ball;
+    private GameObject rock;
     private Vector3 Adam;
     private Vector3 Wolf;
     private Vector3 dir;
@@ -43,11 +43,10 @@ public class Test : MonoBehaviour
             lineRenderer.endColor = Color.red;
             lineRenderer.enabled = false;
 
-            if (ball)
-                GameObject.Destroy(ball);
-            ball = Instantiate(targetObj, new Vector3(Adam.x, 1.5f, Adam.z), Quaternion.identity);
-            
-            //NewBall();        
+            if (rock)
+                GameObject.Destroy(rock);
+            rock = Instantiate(targetObj, new Vector3(Adam.x, 1.5f, Adam.z), Quaternion.identity);
+                
         }
 
         if (Input.GetButton("CreateRandom"))
@@ -70,10 +69,10 @@ public class Test : MonoBehaviour
                 Wolf.z -= 0.04f;
             }
 
-            dir = new Vector3(Wolf.x, Wolf.y + 0.2f, Wolf.z) - ball.transform.position;
+            dir = new Vector3(Wolf.x, Wolf.y + 0.2f, Wolf.z) - rock.transform.position;
 
             lineRenderer = GetComponent<LineRenderer>();
-            lineRenderer.SetPosition(0, ball.transform.position);
+            lineRenderer.SetPosition(0, rock.transform.position);
             lineRenderer.SetPosition(1, new Vector3(Wolf.x, Wolf.y + 0.2f, Wolf.z));
             lineRenderer.enabled = true;
         }
@@ -81,26 +80,15 @@ public class Test : MonoBehaviour
         if (Input.GetButtonUp("CreateRandom"))
         {
             Destroy(lineRenderer);
-            ball.GetComponent<Rigidbody>().AddForce(dir * force, ForceMode.Impulse);
-            // ball.GetComponent<Rigidbody>().useGravity = true;
+            rock.GetComponent<Rigidbody>().AddForce(dir * force, ForceMode.Impulse);
 
         }
-        //    propPad = GameObject.FindGameObjectWithTag("propPad");
-        //}
-
-
-    }
-    void NewBall()
-    {
-        //ball = Instantiate(targetObj, new Vector3(propPad.transform.position.x, propPad.transform.position.y + 0.2f, propPad.transform.position.z), Quaternion.Euler(0, 0, 45));
-        //proptarget.transform.position = GameObject.FindGameObjectWithTag("wolf").transform.position - propPad.transform.position;
-        
     }
 
-    
+
     private void OnCollisionEnter(Collision collision)
     {
-        GameObject.Destroy(ball);
+        GameObject.Destroy(rock);
     }
 
     

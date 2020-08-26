@@ -164,7 +164,7 @@ namespace UnityEngine.PostProcessing
 
             // Command buffer-based effects should be set-up here
             TryExecuteCommandBuffer(m_DebugViews);
-            TryExecuteCommandBuffer(m_AmbientOcclusion);
+            //TryExecuteCommandBuffer(m_AmbientOcclusion);
             TryExecuteCommandBuffer(m_ScreenSpaceReflection);
             TryExecuteCommandBuffer(m_FogComponent);
 
