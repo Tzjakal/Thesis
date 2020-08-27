@@ -7,6 +7,8 @@ public class Fabrik_Enable : MonoBehaviour
 {
     // Start is called before the first frame update
     public FABRIK[] fabrik1;
+   
+   
     void Start()
     {
         fabrik1 = GetComponents<FABRIK>();
@@ -21,8 +23,8 @@ public class Fabrik_Enable : MonoBehaviour
         {
             fabrik1[0].solver.target = GameObject.FindGameObjectWithTag("HitTarget").transform;
             float distance = Vector3.Magnitude(fabrik1[0].solver.target.position - transform.GetChild(0).GetChild(0).GetChild(0).transform.position);
-           
-
+            
+             
             if (distance < 4.0f)
             {
                 for (int i = 0; i < fabrik1.Length; i++)
