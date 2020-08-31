@@ -8,8 +8,8 @@ public class SlowMotion : MonoBehaviour
 
     void Update()
     {
-        //Time.timeScale = (1.0f / slowdownLength) * Time.unscaledDeltaTime;
-        //Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+        Time.timeScale += (1.0f / slowdownLength) * Time.unscaledDeltaTime;
+        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
     }
     public void DoSlowMotion()
     {

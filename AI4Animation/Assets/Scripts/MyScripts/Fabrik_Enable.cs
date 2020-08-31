@@ -23,7 +23,7 @@ public class Fabrik_Enable : MonoBehaviour
             fabrik1[0].solver.target = GameObject.FindGameObjectWithTag("HitTarget").transform;
             float distance = Vector3.Magnitude(fabrik1[0].solver.target.position - transform.GetChild(0).GetChild(0).GetChild(0).transform.position);
 
-            if (fabrik1[0].solver.IKPositionWeight > 1.5f)
+            if (fabrik1[0].solver.IKPositionWeight > 0.1f)
                 slowMotion.DoSlowMotion();
              
             if (distance < 4.0f)

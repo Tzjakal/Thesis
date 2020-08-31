@@ -220,7 +220,7 @@ namespace SIGGRAPH_2018 {
 			}
             
 
-			if (distance < 0.5f)
+			if (distance < 100.5f)
             {
                 style[3] = 1f;
                 turn = 0;
