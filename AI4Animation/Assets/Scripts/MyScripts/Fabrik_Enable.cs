@@ -7,7 +7,7 @@ public class Fabrik_Enable : MonoBehaviour
 {
     // Start is called before the first frame update
     public FABRIK[] fabrik1;
-    public SlowMotion slowMotion;
+    //public SlowMotion slowMotion;
     void Start()
     {
         fabrik1 = GetComponents<FABRIK>();
@@ -21,16 +21,16 @@ public class Fabrik_Enable : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("HitTarget"))
         {
             fabrik1[0].solver.target = GameObject.FindGameObjectWithTag("HitTarget").transform;
-            float distance = Vector3.Magnitude(fabrik1[0].solver.target.position - transform.GetChild(0).GetChild(0).GetChild(0).transform.position);
+            float distance = Vector3.Magnitude(fabrik1[0].solver.target.position - transform.GetChild(0).GetChild(0).GetChild(0).GetChild(0).transform.position);
 
-            if (fabrik1[0].solver.IKPositionWeight > 0.1f)
-                slowMotion.DoSlowMotion();
+            //if (fabrik1[0].solver.IKPositionWeight > 0.1f)
+            //    slowMotion.DoSlowMotion();
              
             if (distance < 4.0f)
             {
                 for (int i = 0; i < fabrik1.Length; i++)
-                    fabrik1[0].enabled = true;                                               //αντί για i--->0 αν θέλουμε να απενεργοποιήσουμε τα ΙΚs στα πόδια...
-                fabrik1[0].solver.IKPositionWeight = Mathf.Pow(50000.0f, -distance/4.0f);
+                    fabrik1[i].enabled = true;                                               //αντί για i--->0 αν θέλουμε να απενεργοποιήσουμε τα ΙΚs στα πόδια...
+                //fabrik1[0].solver.IKPositionWeight = Mathf.Pow(50000.0f, -distance/4.0f);
             }
             else
             {

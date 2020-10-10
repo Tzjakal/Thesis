@@ -205,24 +205,25 @@ namespace SIGGRAPH_2018 {
 			
 			foreach (GameObject block in blocks)
 			{
-				if (Physics.SphereCast(destination, block.GetComponent<MeshRenderer>().bounds.extents.magnitude * 1.2f, ray, out hit, 0.5f))
-				{
+                if (Physics.SphereCast(destination, block.GetComponent<MeshRenderer>().bounds.extents.magnitude * 1.2f, ray, out hit, 0.5f))
+                {
 					if (hit.transform == block.transform)
 					{
                         //if (block.transform.localScale.y < 0.4 && Vector3.Magnitude(block.transform.position - transform.position) < 3.0f)
                         //     style[2] = 1;     
                         //else
+                        turn = (GoTo(targetpos.x, targetpos.z));
+                        if (turn == 0)
                             turn = 1;
+
                         //Debug.Log("BLOCK");
                     }
-
 				}
 			}
             
-
-			if (distance < 100.5f)
+			if (distance < 0.5f)
             {
-                style[3] = 1f;
+                style[0] = 1f;
                 turn = 0;
                 move = Vector3.zero;
             }

@@ -21,7 +21,7 @@ public class ThrowCatch : MonoBehaviour
     {
         if (!GameObject.FindGameObjectWithTag("target"))
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Jump"))
                 NewBall();
             propPad = GameObject.FindGameObjectWithTag("propPad");
         }
@@ -29,7 +29,7 @@ public class ThrowCatch : MonoBehaviour
     void NewBall()
     {
         ball = Instantiate(targetObj, new Vector3(propPad.transform.position.x, propPad.transform.position.y + 0.2f, propPad.transform.position.z), Quaternion.Euler(0, 0, 45));
-        proptarget.transform.position = new Vector3(Random.Range(propPad.transform.position.x - 10.0f, propPad.transform.position.x + 10.0f), 2.72f, Random.Range(propPad.transform.position.z + 10.0f, propPad.transform.position.z + 10.0f));
+        //proptarget.transform.position = new Vector3(Random.Range(propPad.transform.position.x - 10.0f, propPad.transform.position.x + 10.0f), 2.72f, Random.Range(propPad.transform.position.z + 10.0f, propPad.transform.position.z + 10.0f));
 
 
 

@@ -62,3 +62,6 @@ crashlytics-build.properties
 #Specific files
 Parameters.asset
 
+Pictures/History of Animation/zoetrope.png
+*.png
+*.jpg
