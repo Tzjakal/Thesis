@@ -1,1 +1,1 @@
-# Thesis
+# Thesis: Adaptive Animation
