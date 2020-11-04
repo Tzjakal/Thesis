@@ -15,7 +15,11 @@ Using the tools developed for the demo (C# code), new features were added to the
 
 The system can be extended to work with biped characters too. Two differnt examples where examined where Adam avoids objects of different sizes.
 
+<b>Publication Reference:</b>
+<a href = "https://dl.acm.org/doi/abs/10.1145/3072959.3073663?casa_token=xB3KZm9m7YEAAAAA:W_2ki4SmHXk7LVnLaorvi2dC3ULsPVbCPPYPQqCr9d8i6SuNViMHRqvt2GaEIixsD5FMPBVZEsm0">Holden, D., Komura, T., & Saito, J. (2017). Phase-functioned neural networks for character control. ACM Transactions on Graphics (TOG), 36(4), 1-13.</a>
+
 <p> <img width="50%" src="Screenshots/Ninja2.png"> <img width="49%" src="Screenshots/Matrix2.png"  </p>
+  
 
 ------------
 Project Information
