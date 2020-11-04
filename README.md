@@ -12,3 +12,9 @@ Using the tools developed for the demo (C# code), new features were added to the
 The system can be extended to work with biped characters too. Two differnt examples where examined where Adam avoids objects of different sizes.
 
 <p> <img width="50%" src="Screenshots/Ninja2.png"> <img width="49%" src="Screenshots/Matrix2.png"  </p>
+
+------------
+
+This project was developed for research purposes and does not contain a playable application.
+Don't forget to visit Sebastian Starke's repository to witness their amazing work.
+(https://github.com/sebastianstarke/AI4Animation/tree/master/AI4Animation)
