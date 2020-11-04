@@ -25,6 +25,7 @@ The system can be extended to work with biped characters too. Two differnt examp
 Project Information
 ============ 
 This project was developed for research purposes and does not contain a playable application. It was developed by Konstantinos Kalatzis as his thesis for his undergraduate studies at the University of Patras, Greece.
+<br>
 Don't forget to visit <a href = "https://github.com/sebastianstarke/AI4Animation">Sebastian Starke’s repository</a> to witness their amazing work.
 
 ------------
