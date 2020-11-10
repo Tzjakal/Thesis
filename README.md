@@ -1,7 +1,7 @@
 # Thesis: Adaptive Animation
 <img width="100%" src="Screenshots/System.png">
 
-The system proposed in this thesis, describes a colision avoidance technique, using the FABRIK (Forward and Backward Reaching Inverse Kinematics) algorithm, combined with the necessary rotation limits. The whole system is built on <a href = "https://github.com/sebastianstarke/AI4Animation/tree/master/AI4Animation/SIGGRAPH_2018">Sebastian Starke’s Demo</a> with Unity3D and Final IK,  as  a  continuation  of  their  research. The characters can avoid obstacles of various sizes in realtime, while maintaining their original motion produced from the design of the previous system. 
+The system proposed in this thesis, describes a collision avoidance technique, using the FABRIK (Forward and Backward Reaching Inverse Kinematics) algorithm, combined with the necessary rotation limits. The whole system is built on <a href = "https://github.com/sebastianstarke/AI4Animation/tree/master/AI4Animation/SIGGRAPH_2018">Sebastian Starke’s Demo</a> with Unity3D and Final IK,  as  a  continuation  of  their  research. The characters can avoid obstacles of various sizes in realtime, while maintaining their original motion produced from the design of the previous system. 
 
 <b>Publication Reference:</b>
 <a href = "https://dl.acm.org/doi/abs/10.1145/3197517.3201366?casa_token=Si8lXYxS2h0AAAAA:X73P8o0_hVa_zJVqJIkHjQcIjRf862WHTYIrS_Qw9SJH4US6acQe_MkhbK6gez3CltV5CxcJbL6a">Zhang, H., Starke, S., Komura, T., & Saito, J. (2018). Mode-adaptive neural networks for quadruped motion control. ACM Transactions on Graphics (TOG), 37(4), 1-11.</a>
