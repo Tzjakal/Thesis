@@ -7,7 +7,7 @@ The system proposed in this thesis, describes a colision avoidance technique, us
 <a href = "https://dl.acm.org/doi/abs/10.1145/3197517.3201366?casa_token=Si8lXYxS2h0AAAAA:X73P8o0_hVa_zJVqJIkHjQcIjRf862WHTYIrS_Qw9SJH4US6acQe_MkhbK6gez3CltV5CxcJbL6a">Zhang, H., Starke, S., Komura, T., & Saito, J. (2018). Mode-adaptive neural networks for quadruped motion control. ACM Transactions on Graphics (TOG), 37(4), 1-11.</a>
 
 
-<img width="100%" src="Screenshots/RockAvoid2.png">
+<img width="100%" src="Screenshots/RockAvoidNew2.png">
 
 Using the tools developed for the demo (C# code), new features were added to the project. The user now controls a humanoid character (Adam) and has the wolf as his companion. The latter follows Adam wherever he goes and catches the ball Adam throws, while avoiding obstacles in his path.
 
